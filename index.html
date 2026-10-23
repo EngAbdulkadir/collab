@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><title>PageTurners Book Club</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Georgia', serif; }
+    body { background:#FAF8F5; color:#292524; line-height:1.6; }
+    header { background:#1C1917; color:#F5F5F4; padding:1.2rem 2rem; display:flex; justify-content:space-between; align-items:center; }
+    header a { color:#D6D3D1; text-decoration:none; margin-left:1.2rem; font-family:sans-serif; font-size:0.85rem; }
+    .hero { text-align:center; padding:4.5rem 1.5rem; background:#F5F0EB; border-bottom:1px solid #E7E5E4; }
+    .hero h1 { font-size:2.8rem; color:#1C1917; margin-bottom:0.5rem; font-style:italic; }
+    .btn { background:#1C1917; color:#FAF8F5; padding:0.75rem 1.5rem; text-decoration:none; display:inline-block; border:none; font-family:sans-serif; font-size:0.9rem; }
+    .container { max-width:960px; margin:auto; padding:3.5rem 1.5rem; }
+    .grid { display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center; }
+    .book-card { background:#fff; border:1px solid #E7E5E4; padding:1.5rem; flex:1 1 260px; text-align:center; border-radius:4px; }
+    .badge { font-family:sans-serif; font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; color:#78716C; }
+    form { display:flex; flex-direction:column; gap:0.8rem; max-width:420px; margin:auto; }
+    input, textarea { padding:0.75rem; border:1px solid #D6D3D1; font-family:sans-serif; }
+    footer { background:#1C1917; color:#78716C; text-align:center; padding:2rem; font-family:sans-serif; font-size:0.85rem; }
+  </style>
+</head>
+<body>
+  <!-- SECTION 1: Nav & Hero -->
+  <header>
+    <h2>PageTurners Society</h2>
+    <nav><a href="#featured">Current Book</a><a href="#past">Archive</a><a href="#quotes">Quotes</a><a href="#rules">Rules</a><a href="#rsvp">Join Meeting</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Read Deeply. Discuss Openly.</h1>
+    <p>A neighborhood reading club sharing fiction, philosophy, and history each month.</p>
+    <a href="#rsvp" class="btn" style="margin-top:1.2rem;">RSVP for October Meetup</a>
+  </section>
+
+  <!-- SECTION 2: Current Book Feature -->
+  <section id="featured" class="container">
+    <div class="book-card" style="max-width:650px; margin:auto;">
+      <span class="badge">October 2026 Pick</span>
+      <h2 style="margin:0.5rem 0 0.2rem;">The Midnight Library</h2>
+      <p style="font-style:italic; color:#57534E; margin-bottom:1rem;">by Matt Haig</p>
+      <p>Between life and death there is a library where every shelf contains a book representing the different choices you could have made. Discussion will focus on regrets vs. acceptance.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Past Reads Archive -->
+  <section id="past" class="container">
+    <h2 style="text-align:center; margin-bottom:2rem;">Past Reads</h2>
+    <div class="grid">
+      <div class="book-card"><span class="badge">September</span><h3>Klara and the Sun</h3><p style="font-style:italic; font-size:0.9rem; color:#78716C;">Kazuo Ishiguro</p></div>
+      <div class="book-card"><span class="badge">August</span><h3>Before the Coffee Gets Cold</h3><p style="font-style:italic; font-size:0.9rem; color:#78716C;">Toshikazu Kawaguchi</p></div>
+      <div class="book-card"><span class="badge">July</span><h3>Circe</h3><p style="font-style:italic; font-size:0.9rem; color:#78716C;">Madeline Miller</p></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Discussion Quotes -->
+  <section id="quotes" class="container" style="background:#fff; border:1px solid #E7E5E4; border-radius:6px;">
+    <h2 style="text-align:center; margin-bottom:1.5rem;">Thoughts From Last Month</h2>
+    <p style="text-align:center; font-style:italic; max-width:600px; margin:auto; color:#44403C;">
+      "Our discussion on Ishiguro completely changed my interpretation of the ending. That is why I love this club — you leave with five different perspectives on the same page."
+    </p>
+    <p style="text-align:center; margin-top:0.8rem; font-family:sans-serif; font-size:0.85rem; color:#78716C;">— Emily C., Member since 2024</p>
+  </section>
+
+  <!-- SECTION 5: Club Rules -->
+  <section id="rules" class="container">
+    <h2 style="text-align:center; margin-bottom:1.5rem;">Club Etiquette</h2>
+    <div class="grid">
+      <div style="flex:1 1 200px; text-align:center;"><h4>Read at Your Pace</h4><p style="font-size:0.9rem; color:#78716C;">Didn't finish the book? Still welcome! Just beware of friendly spoilers.</p></div>
+      <div style="flex:1 1 200px; text-align:center;"><h4>Respectful Disagreements</h4><p style="font-size:0.9rem; color:#78716C;">Different reactions to characters and endings make the best debates.</p></div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: RSVP Form & Footer -->
+  <section id="rsvp" class="container" style="background:#F5F0EB; border-radius:6px;">
+    <h2 style="text-align:center; margin-bottom:1.5rem;">RSVP for Next Discussion</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="2" placeholder="Have you started reading yet? Any early thoughts?"></textarea>
+      <button type="button" class="btn" style="cursor:pointer;">Confirm Attendance</button>
+    </form>
+  </section>
+  <footer><p>&copy; 2026 PageTurners Society. Hosted at Central Library.</p></footer>
+</body>
+</html>
